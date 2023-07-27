@@ -3,6 +3,8 @@
 Firebase Remote Config / Crowdin tool for strings translation
 
 Usage:
+| Script | Purpose |
+| --- | --- |
 | `./translate-firebase-strings.sh` | Translate Firebase Remote Config strings |
 | `./publish-firebase-config.sh` | Publish a Firebase Remote Config |
 | `./translate-xcode-strings.sh` | Translate XCode Strings |
@@ -10,7 +12,9 @@ Usage:
 | `./generate-swift-file.sh` | Generate a Swift Firebase Remote Config model file |
 | `./cleanup.sh` | Cleanup |
 
-Before use, at a minimum::
+Before use, at a minimum:
+| Subject | Actions |
+| --- | --- |
 | [StringerHelper](https://github.com/igorleonovich/stringer-helper-cli) | Should be downloaded and configured |
 | [Firebase CLI](https://formulae.brew.sh/formula/firebase-cli) & [Crowdin CLI](https://formulae.brew.sh/formula/crowdin) | Should be installed manually or via running `brew bundle` from this project's path and logged in |
 | `.firebaserc` | `firebase-project-name` should be changed to Firebase project ID |
@@ -19,5 +23,5 @@ Before use, at a minimum::
 | `copy-xcode-strings.sh` | Language list should be set accordingly (e.g. `pt-PT:pt-PT.lproj` etc.) |
 | languages.json | Language list should be set accordingly (e.g. `pt-PT:pt-PT.lproj` etc.) |
 | `translate-xcode-strings.yml` | `project_id` and `api_token` should be obtained from Crowdin and set here |
-| `pull-xcode-strings.yml` | `project_id` and `api_token` should be obtained from Crowdin and set here<br>`languages_mapping`: Languages with custom path should me mapped here |
-| `translate-firebase-remote-config-strings.yml` | `project_id` and `api_token` should be obtained from Crowdin and set here<br>`languages_mapping`: Languages with custom path should me mapped here |
+| `pull-xcode-strings.yml` | `project_id` and `api_token` should be obtained from Crowdin and set here<br>`languages_mapping`: Languages with custom path should be mapped here |
+| `translate-firebase-remote-config-strings.yml` | `project_id` and `api_token` should be obtained from Crowdin and set here<br>`languages_mapping`: Languages with custom path should be mapped here |
