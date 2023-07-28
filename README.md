@@ -1,4 +1,4 @@
-# StringerCLI
+# Stringer (CLI)
 
 Firebase Remote Config / Crowdin tool for strings translation
 
@@ -16,9 +16,9 @@ Before use, at a minimum:
 | Subject | Actions |
 | --- | --- |
 | [StringerHelper](https://github.com/igorleonovich/stringer-helper-cli) | Should be downloaded and configured |
-| [Firebase CLI](https://formulae.brew.sh/formula/firebase-cli) & [Crowdin CLI](https://formulae.brew.sh/formula/crowdin) | Should be installed manually or via running `brew bundle` from this project's path and logged in |
+| [Firebase CLI](https://formulae.brew.sh/formula/firebase-cli) & [Crowdin CLI](https://formulae.brew.sh/formula/crowdin) | - Should be installed manually or via running `brew bundle` from this project's path downloaded to<br> - Should be logged in |
 | `.firebaserc` | `firebase-project-name` should be changed to Firebase project ID |
-| `.env` | `STRINGER_PROJECT_PATH` should be set to the path this project downloaded to<br>`STRINGER_HELPER_PROJECT_PATH` should be set to the path the project downloaded to<br>`STRINGER_HELPER_PROJECT_BUILD_ARCHITECTURE` should be set accordingly to the machine's architecture<br>`XCODE_PROJECT_LOCALIZATIONS_FOLDER_PATH` should be set properly<br>`CROWDIN_ENGINE_ID` should be set |
+| `.env` | `STRINGER_PROJECT_PATH` should be set to the path this project downloaded to<br>`STRINGER_HELPER_PROJECT_PATH` should be set to the path of [StringerHelper](https://github.com/igorleonovich/stringer-helper-cli) project downloaded to<br>`STRINGER_HELPER_PROJECT_BUILD_ARCHITECTURE` should be set accordingly to the machine's architecture<br>`XCODE_PROJECT_LOCALIZATIONS_FOLDER_PATH` should be set properly<br>`CROWDIN_ENGINE_ID` should be set |
 | `cleanup.sh` | `STRINGER_HELPER_PROJECT_PATH` should be changed to Stringer Helper project path |
 | `copy-xcode-strings.sh` | Language list should be set accordingly (e.g. `pt-PT:pt-PT.lproj` etc.) |
 | languages.json | Language list should be set accordingly (e.g. `pt-PT:pt-PT.lproj` etc.) |
