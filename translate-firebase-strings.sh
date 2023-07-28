@@ -1,7 +1,8 @@
 #!/bin/bash
 
-firebase login
-firebase use default
+#firebase login
+#firebase use default
+
 firebase remoteconfig:get -o "remoteconfig.last.json"
 
 currentDir=$(dirname $0)
